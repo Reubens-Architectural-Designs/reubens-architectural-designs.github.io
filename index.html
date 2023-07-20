@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reubens Architectural Designs</title>
-  <!-- ... -->
+  <!-- SHEMA.ORG -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -43,11 +43,8 @@
     "sameAs": "https://instagram.com/reubens_archdesigns?igshid=OGQ5ZDc2ODk2ZA=="
   }
   </script>
-<!--  PICO.CSS  -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1.5.10/css/pico.min.css">  
-  <script src="https://cdn.jsdelivr.net/npm/@picocss/pico@1.5.10/css/postcss.config.min.js"></script>
-<!--  OCTOKIT  -->
-  <script src="https://cdn.jsdelivr.net/npm/@octokit/rest@20.0.1/dist-node/index.min.js"></script>
+  <!-- PICO.CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1.5.10/css/pico.min.css">
 </head>
 
 <body>
@@ -95,9 +92,19 @@
       <article>
         <!-- Contact Us content goes here -->
         <p>If you have any inquiries or would like to request a quote, please fill out the form below:</p>
-        <form>
-          <!-- Contact form fields go here -->
-          <!-- Name, Email, Message, etc. -->
+        <form id="contactForm">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
           <button type="submit">Submit</button>
         </form>
       </article>
@@ -109,7 +116,7 @@
     <p>© 2023 Reubens Architectural Designs. All rights reserved.</p>
   </footer>
 
-  <script type="module" src="./main.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 
 </html>
