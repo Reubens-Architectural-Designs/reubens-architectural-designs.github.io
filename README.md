@@ -44,7 +44,6 @@ This is the README.md file for Reubens Architectural Designs, a South African co
 │   ├── pages/           # Page-level components
 │   ├── styles/          # CSS stylesheets
 │   └── index.js         # Entry point of the application
-├── public/              # Public files (index.html, favicon.ico, etc.)
 ├── .gitignore           # Git ignore file
 ├── package.json         # Project dependencies and scripts
 └── README.md            # Project README file
